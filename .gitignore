@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/components/Form.js
+/src/assets
+/src/components/Testimonial.js
+/src/components/EventCard.js
+/src/pages/Sponsors.js
