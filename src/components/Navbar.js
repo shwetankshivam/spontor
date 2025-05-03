@@ -19,37 +19,37 @@ function Navbar() {
                         Spontor.
                     </Typography>
 
-                    {/* Events Button - Mobile View */}
-                    <Button
-                        component={Link}
-                        to="/events"
-                        sx={{
-                            display: { xs: "block", md: "none" },
-                            border: "1px solid #3328BF",
-                            borderRadius: "8px",
-                            textTransform: "none",
-                            fontSize: "16px",
-                            px: 2,
-                            color: "black",
-                            ml: 2,
-                            mr: 2
-                        }}
-                    >
-                        Upcoming events
-                    </Button>
+                        {/* Events Button - Mobile View */}
+                        <Button
+                            component={Link}
+                            to="/events"
+                            sx={{
+                                display: { xs: "block", md: "none" },
+                                border: "1px solid #3328BF",
+                                borderRadius: "8px",
+                                textTransform: "none",
+                                fontSize: "16px",
+                                px: 2,
+                                color: "black",
+                                ml: 2,
+                                mr: 2
+                            }}
+                        >
+                            Upcoming events
+                        </Button>
 
-                    {/* Desktop Navigation */}
-                    <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3 }}>
-                        <Button component={Link} to="/testimonials" sx={{ textTransform: "none", fontSize: "16px", color: "black" }}>Testimonials</Button>
-                        <Button component={Link} to="/about" sx={{ textTransform: "none", fontSize: "16px", color: "black" }}>About Us</Button>
-                        <Button component={Link} to="/events" sx={{ textTransform: "none", fontSize: "16px", border: "1px solid #3328BF", borderRadius: "8px", px: 2, color: "black" }}>Upcoming Events</Button>
-                        <Button component={Link} to="/contact" sx={{ textTransform: "none", fontSize: "16px", backgroundColor: "#3328BF", borderRadius: "8px", px: 2, color: "white" }}>Contact Us</Button>
-                    </Box>
+                        {/* Desktop Navigation */}
+                        <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3 }}>
+                            <Button component={Link} to="/testimonials" sx={{ textTransform: "none", fontSize: "16px", color: "black" }}>Testimonials</Button>
+                            <Button component={Link} to="/about" sx={{ textTransform: "none", fontSize: "16px", color: "black" }}>About Us</Button>
+                            <Button component={Link} to="/events" sx={{ textTransform: "none", fontSize: "16px", border: "1px solid #3328BF", borderRadius: "8px", px: 2, color: "black" }}>Upcoming Events</Button>
+                            <Button component={Link} to="/contact" sx={{ textTransform: "none", fontSize: "16px", backgroundColor: "#3328BF", borderRadius: "8px", px: 2, color: "white" }}>Contact Us</Button>
+                        </Box>
 
-                    {/* Mobile Menu Icon */}
-                    <IconButton sx={{ display: { xs: "block", md: "none" }, color: "black" }} onClick={handleDrawerToggle}>
-                        <MenuIcon />
-                    </IconButton>
+                        {/* Mobile Menu Icon */}
+                        <IconButton sx={{ display: { xs: "block", md: "none" }, color: "black" }} onClick={handleDrawerToggle}>
+                            <MenuIcon />
+                        </IconButton>
                 </Toolbar>
             </Container>
 

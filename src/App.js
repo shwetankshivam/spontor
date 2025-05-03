@@ -4,12 +4,12 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "./styles/theme";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import AboutUs from "./pages/About";
 import Events from "./pages/Events";
-import Sponsors from "./pages/Sponsors";
 import Contact from "./pages/Contact";
-import Signup from "./pages/Signup";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -20,10 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/testimonials" element={<Testimonial />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         {/* <Testimonial /> */}
         <Footer />

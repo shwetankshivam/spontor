@@ -2,13 +2,14 @@ import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Testimonial from "../components/Testimonial";
 import Form from "../components/Form";
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
         <Box sx={{ backgroundColor: "#fff" }}>
 
             {/* Hero Section */}
-            <Box
+            <Box id="home"
                 sx={{
                     textAlign: "center",
                     py: { xs: 6, md: 10 },
@@ -30,14 +31,9 @@ function Home() {
                         color="primary"
                         sx={{ fontWeight: "bold", mt: 2, textTransform: "uppercase", fontSize: { xs: "80%", md: "48px" } }}
                     >
-                        Seamless Sponsorship Starts Here
+                        Pitch. Match. cash in
                     </Typography>
-                    <Typography
-                        color="textSecondary"
-                        sx={{ mt: 2, fontSize: { xs: "16px", md: "20px" } }}
-                    >
-                        Connect. Support. Succeed.
-                    </Typography>
+
                     <Box sx={{ mt: 3, display: "flex", justifyContent: "center", gap: 2 }}>
                         <Button variant="contained" color="primary" sx={{ px: 3, py: 1, borderRadius: "8px" }}>
                             Get Started
@@ -54,7 +50,7 @@ function Home() {
                 <Grid container spacing={4} alignItems="center">
                     <Grid item xs={12} md={6}>
                         <Typography color="primary" sx={{ fontWeight: "bold" }}>
-                            About Us
+                            What we do ?
                         </Typography>
                         <Typography
                             variant="h4"
@@ -67,21 +63,67 @@ function Home() {
                             Fueling Dreams, Powering Partnerships
                         </Typography>
                         <Typography color="textSecondary" sx={{ mt: 2, fontSize: { xs: "14px", md: "16px" } }}>
-                            At Spontor, we bridge the gap between athletes and sponsors,
-                            creating a seamless connection that fuels success. Our platform
-                            empowers athletes by providing them with the opportunities and
-                            resources they need to thrive, while giving sponsors access to
-                            promising talent that aligns with their brand values.
+                            At <strong>Spontor</strong>, we connect brands with events in a seamless and result-oriented manner.
+                            Our platform is built to eliminate friction in the sponsorship process—delivering high-conversion
+                            collaborations between India’s leading events and ambitious brands.
                         </Typography>
-                        <Button variant="contained" color="primary" sx={{ mt: 3, borderRadius: "8px" }}>
-                            Learn More →
-                        </Button>
+                        <Link to="/about" style={{ textDecoration: 'none' }}>
+                            <Button variant="contained" color="primary" sx={{ mt: 3, borderRadius: "8px" }}>
+                                Learn More →
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box
                             component="img"
-                            src="https://unsplash.com/photos/crowd-facing-lighted-stage-eXVd7gDPO9A"
-                            alt="Athlete sponsorship"
+                            src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/02/03172139/Zomaland--1600x900.jpg"
+                            alt="event"
+                            sx={{
+                                width: "100%",
+                                borderRadius: 3,
+                                height: { xs: "auto", md: "350px" },
+                                objectFit: "cover",
+                            }}
+                        />
+                    </Grid>
+                </Grid>
+            </Container>
+            {/* why choose us  */}
+            <Container sx={{ py: { xs: 6, md: 10, textAlign: "left" }, width: { xs: "100%", md: "80%" } }}>
+                <Grid container spacing={4} alignItems="center">
+                    <Grid item xs={12} md={6}>
+                        <Typography color="primary" sx={{ fontWeight: "bold" }}>
+                            Why us ?
+                        </Typography>
+                        <Typography
+                            variant="h5"
+                            fontWeight="bold"
+                            gutterBottom
+                            sx={{ color: "#333" }}
+                        >
+                            For Brands that Expect More
+                        </Typography>
+
+                        <Typography variant="body1" sx={{ mb: 4 }}>
+                            Whether you're a  <strong>startup</strong> looking to generate buzz or a global brand targeting Gen Z, Spontor gives you:
+                            <ul style={{ paddingLeft: "1.5em", lineHeight: "1.8" }}>
+                                <li>Access to high-impact youth-led platforms</li>
+                                <li>Faster deal closure with verified opportunities</li>
+                                <li>Smarter targeting via our in-house insights team</li>
+                                <li>Peace of mind with a full-service sponsorship engine</li>
+                            </ul>
+                        </Typography>
+                        <Link to="/about" style={{ textDecoration: 'none' }}>
+                            <Button variant="contained" color="primary" sx={{ mt: 1, borderRadius: "8px" }}>
+                                Learn More →
+                            </Button>
+                        </Link>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Box
+                            component="img"
+                            src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/02/03172139/Zomaland--1600x900.jpg"
+                            alt="event"
                             sx={{
                                 width: "100%",
                                 borderRadius: 3,
@@ -93,54 +135,14 @@ function Home() {
                 </Grid>
             </Container>
 
+
+
+
+
+
             {/* Sponsorship Form Section */}
-            <Container sx={{ py: { xs: 6, md: 10 }, width: { xs: "100%", md: "80%" } }}>
+            <Container id="contact" sx={{ py: { xs: 6, md: 10 }, width: { xs: "100%", md: "80%" } }}>
                 <Form />
-            </Container>
-
-
-            {/* Features Section */}
-            <Container sx={{ py: { xs: 6, md: 10 }, width: { xs: "100%", md: "80%" } }}>
-                <Typography
-                    variant="h4"
-                    sx={{
-                        fontWeight: "bold",
-                        textAlign: "left",
-                        fontSize: { xs: "h4", md: "36px" },
-                    }}
-                >
-                    Surpassing Standards for Outstanding Success
-                </Typography>
-
-                <Grid container spacing={4} sx={{ mt: 4 }}>
-                    {/* Feature 1 */}
-                    <Grid item xs={12} md={6}>
-                        <Box
-                            component="img"
-                            src="/assets/concert1.jpeg"
-                            alt="Empowering Athletes"
-                            sx={{
-                                width: "100%",
-                                borderRadius: 3,
-                                height: { xs: "auto", md: "250px" },
-                                objectFit: "cover",
-                            }}
-                        />
-                        <Typography
-                            variant="h4"
-                            sx={{ fontWeight: "bold", mt: 2, fontSize: { xs: "18px", md: "24px" } }}
-                        >
-                            Empowering Athletes
-                        </Typography>
-                        <Typography color="textSecondary" sx={{ fontSize: { xs: "14px", md: "16px" } }}>
-                            Spontor helps athletes secure sponsorships, gain exposure, and
-                            connect with brands that support their journey.
-                        </Typography>
-                        <Button color="primary" sx={{ mt: 1, fontWeight: "bold" }}>
-                            Read More →
-                        </Button>
-                    </Grid>
-                </Grid>
             </Container>
             <Testimonial />
         </Box>
