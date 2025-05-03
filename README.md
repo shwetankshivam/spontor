@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Spontor – Sponsor Connect Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Spontor is a web-based platform designed to seamlessly connect event organizers with potential sponsors. Built using React and Material UI for the frontend and Firebase for backend services, the platform serves as a bridge between college/university events and corporate sponsors.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- 🎯 List of upcoming and recent events with dynamic updates
+- 📅 Real-time data fetching from a secure backend (Google Sheets + Firebase)
+- 📸 Event cards with title, genre, venue, description, and date
+- 🧭 “Know More” modal with full details and image
+- 📞 "Contact Now" button to connect directly with event organizers
+- ✅ Sorting events by most recent updates
+- 🔗 Responsive navigation and internal page linking (e.g., About, Contact)
+- ❌ 404 Page for undefined routes with styled fallback UI
+- 📱 Fully responsive design optimized for desktop and mobile
 
-### `npm start`
+## 🚀 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Material UI
+- **Backend/Data Source**: Firebase Hosting, Google Sheets (database)
+- **Deployment**: Firebase
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Project Structure (Simplified)
+/src
+/components
+/pages
+- Events.js
+- About.js
+- Contact.js
+- NotFound.js
+/assets
+App.js
+index.js
+firebase.json
+public/
+README.md
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
